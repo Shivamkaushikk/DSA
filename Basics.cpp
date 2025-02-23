@@ -99,3 +99,96 @@ int main(){
 }
 
 //--------------------------------------------------------------------------------------------------------------------------------------//
+
+// For loop 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+  int i;
+  for(i=1;i<=5;i++){
+    cout<<"Shivam"<<i<<endl;
+  }
+  cout<<"loops end at"<<i;
+  return 0;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------//
+
+//While loop
+
+#include <iostream>
+using namespace std;
+
+int main(){
+  int i=1;
+  while (i<=5) {
+    cout<<"shivam"<<i<<endl;
+    i++;
+  }
+  return 0;
+}
+
+// do while loop
+
+#include <iostream>
+using namespace std;
+
+int main(){
+  int i=2;
+  do{
+    cout<<"shivam"<<i<<endl;
+    i++;
+  }while(i<=5);
+  return 0;
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------//
+
+//Functions
+
+// Functions are set of code which performs something for you 
+// Functions are used to modulise code 
+// Functions are used to increase readability
+// Functions are used to use same code multiple times 
+// Void -> which does not returns anything 
+// return
+// parameterised
+// non parameterised
+
+#include<iostream>
+using namespace std;
+
+void Printname(string name){
+  cout<<"hey"<<name<<endl;
+}
+
+int main(){
+  string name;
+  cin>>name;
+  Printname(name);
+
+  string name2;
+  cin >> name2;
+  Printname(name2);
+  return 0;
+}
+
+// Take 2 numbers and prints its sum
+
+#include<iostream>
+using namespace std;
+
+int sum (int num1, int num2){
+  int num3=num1+num2;
+  return num3;
+}
+
+int main(){
+  int a, b;
+  cin >>a>>b;
+  int res = sum(a,b);
+  cout<<res; 
+}
+
